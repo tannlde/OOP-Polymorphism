@@ -9,7 +9,7 @@ namespace OOP_Polymorphism
             //
             //Shape shape = new Shape();
 
-            //
+            //Hello 
             try
             {
                 Shape rectangle = new Rectangle(10, 3)
