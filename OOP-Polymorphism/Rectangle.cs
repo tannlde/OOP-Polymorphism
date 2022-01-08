@@ -2,9 +2,9 @@
 
 namespace OOP_Polymorphism
 {
+    // "Rectangle" class extents "Shape" abstract class
     class Rectangle : Shape
     {
-
         private int _length;
         private int _width;
 
@@ -12,22 +12,30 @@ namespace OOP_Polymorphism
 
         public Rectangle(int length, int width)
         {
-            _length = length > 0 ? length : throw new System.Exception("Lenght must be greater than 0");
-            _width = width > 0 ? width : throw new System.Exception("Width must be greater than 0");
+            Length = length;
+            Width = width;
         }
+
+        //public Rectangle(int length, int width, String color)
+        //{
+        //    Length = length;
+        //    Width = width;
+        //    base.Color = color;
+        //}
 
         public int Length
         {
             get => _length;
-            set => _length = value > 0 ? value : throw new System.Exception("Lenght must be greater than 0");
+            set => _length = value > 0 ? value : throw new Exception("Lenght must be greater than 0");
         }
 
         public int Width
         {
             get => _width;
-            set => _width = value > 0 ? value : throw new System.Exception("Width must be greater than 0");
+            set => _width = value > 0 ? value : throw new Exception("Width must be greater than 0");
         }
 
+        // Optional override
         public override void Draw()
         {
             if (base.Color == "Red")
@@ -49,9 +57,9 @@ namespace OOP_Polymorphism
             Console.ForegroundColor = ConsoleColor.White;
         }
 
+        // Must be overrdie
         public override double GetArea() => _length * _width;
 
         public override string ToString() => $"This is a {base.Color} Rectangle";
-
     }
 }
