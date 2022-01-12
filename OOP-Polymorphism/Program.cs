@@ -43,7 +43,7 @@ namespace OOP_Polymorphism
                 //By using "new" keyword we also can access old "Draw" method
                 (triangle as Shape).Draw();
 
-                Console.WriteLine($"Area of Trianle is {triangle.GetArea()}");
+                Console.WriteLine($"Area of Triangle is {triangle.GetArea()}");
 
                 Console.WriteLine("\n\n************************************");
 

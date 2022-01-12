@@ -2,6 +2,7 @@
 using System;
 namespace OOP_Polymorphism
 {
+    // Không chứa dữ liệu, chỉ là cái khung
     // Default is internal 
     // But can only be internal or public
     interface IShape
@@ -11,7 +12,10 @@ namespace OOP_Polymorphism
 
         // If it has implement (default interface methods)
         // it becomes a virtual extension method
-        double GetArea() => 0;
+        double GetArea() {
+            
+            return 0;
+        }
     }
 
 }

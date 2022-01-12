@@ -15,7 +15,9 @@ namespace OOP_Polymorphism
             Length = length;
             Width = width;
         }
+        // public Rectangle(int length, int width,String color ):base(color){
 
+        // }
         //public Rectangle(int length, int width, String color)
         //{
         //    Length = length;
