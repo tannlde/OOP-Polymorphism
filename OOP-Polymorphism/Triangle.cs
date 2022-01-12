@@ -5,6 +5,7 @@ namespace OOP_Polymorphism
     // "Triangle" class extents "Shape" abstract class
     class Triangle : Shape
     {
+       
         private int _base;
         private int _height;
         public Triangle() { }
@@ -41,10 +42,9 @@ namespace OOP_Polymorphism
         // We are not override "Draw" method but it still Ok
        
         // We can create a new method name "Draw"
-        // but not overrdide by use "new" keyword
         public new void Draw()
         {
-            Console.WriteLine("Draw not support!");
+            Console.WriteLine("Draw is not support!");
         }
 
         // Asserting that we are aware that the member
